@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="kk">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Менің Жеке Сайтым</title>
+
+    <style>
+
+        body {
+
+            font-family: 'Arial', sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #f5f5f5;
+
+        }
+
+        header {
+
+            background-color: #4c0080;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px 0;
+
+        }
+
+        header h1 {
+
+            font-size: 2.5em;
+
+            margin: 0;
+
+        }
+
+        nav {
+
+            display: flex;
+
+            justify-content: center;
+
+            background-color: #333;
+
+            padding: 10px 0;
+
+        }
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            margin: 0 15px;
+
+            font-size: 1.2em;
+
+            padding: 5px 10px;
+
+        }
+
+        nav a:hover {
+
+            background-color: #4c0080;
+
+            border-radius: 5px;
+
+        }
+
+        main {
+
+            text-align: center;
+
+            padding: 20px;
+
+        }
+
+        section {
+
+            margin: 20px auto;
+
+            max-width: 800px;
+
+            padding: 15px;
+
+            background-color: white;
+
+            border-radius: 10px;
+
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+        }
+
+        h2 {
+
+            color: #4c0080;
+
+        }
+
+        p {
+
+            color: #333;
+
+            font-size: 1.2em;
+
+            line-height: 1.6;
+
+        }
+
+        ol, ul {
+
+            text-align: left;
+
+            margin: 20px;
+
+        }
+
+        li {
+
+            font-size: 1.1em;
+
+            margin-bottom: 10px;
+
+            line-height: 1.5;
+
+        }
+
+        footer {
+
+            background-color: #333;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 10px 0;
+
+            margin-top: 20px;
+
+        }
+
+        .quote {
+
+            font-style: italic;
+
+            color: #800000;
+
+            margin: 20px 0;
+
+        }
+
+        .search-box {
+
+            margin: 20px 0;
+
+        }
+
+        .search-box input {
+
+            padding: 10px;
+
+            width: 300px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            font-size: 1em;
+
+        }
+
+    </style>
+
+    <script>
+
+        function showPage(pageId) {
+
+            const pages = document.querySelectorAll('.page');
+
+            pages.forEach(page => page.style.display = 'none');
+
+            document.getElementById(pageId).style.display = 'block';
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Менің Жеке Сайтым</h1>
+
+    </header>
+
+    <nav>
+
+        <a href="#" onclick="showPage('home')">Басты бет</a>
+
+        <a href="#" onclick="showPage('portfolio')">Портфолио</a>
+
+    </nav>
+
+
+
+    <!-- Басты бет -->
+
+    <main id="home" class="page">
+
+        <section>
+
+            <h2>Мен туралы</h2>
+           
+         <p> Мен Бигамедин Інжумаржан 2006 жылы 26 тамызда дүниеге келгенмін . Маңғыстау облысы , Ақтау қаласысында туылып сол қалада өскенмін . Әке шешем осы Батыстың тумасы . Ақтауда орта білім беретін 20 ыншы орта мектепті орта сыныпқа дейін оқыдым . Мектеп жылдарында воллейбол мен пианино ға олимпиадаларға қатысып орын алып жүргем . Солай жоғарғы сыныптыпты жоғарғы сынып оқушылары оқитын мектепте оқығанмын . Ол мектепте Ұбтға дайындалу үшін ауысып кеткем . Қызығушылығым пианино және воллейбол ойынын тамашалау .  Менің викс сайтым https://ibigamedin.wixsite.com/my-site-5
+            <p class="quote">".Түбі бір тірлік жеңеді."</p>
+       
+           </section>
+
+        <section class="search-box">
+
+            <h3>Іздеу</h3>
+
+            <input type="search" placeholder="Мазмұнды іздеу...">
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Портфолио -->
+
+    <main id="portfolio" class="page" style="display: none;">
+
+        <section>
+
+            <h2>Сайтты қалай жасадым?</h2>
+
+            <p>Бұл сайтты жасау үшін мен келесі қадамдарды орындадым:</p>
+
+            <ol>
+
+                <li>HTML көмегімен сайттың негізгі құрылымын жаздым. Бөлімдер мен элементтерді логикалық түрде орналастырдым.</li>
+
+                <li>CSS арқылы сайт дизайнын жасадым. Әдемі түстер палитрасын таңдадым (фиолетовый, қара, қызыл).</li>
+
+Адлетик, [08.12.2024 19:49]
+<li>JavaScript кодын қосып, беттер арасында ауысу функциясын қостым.</li>
+
+                <li>Жергілікті компьютерде барлық файлдарды дайындап болған соң, GitHub репозиторийін құрдым.</li>
+
+                <li>Git командаларын қолданып, кодты GitHub-қа жүктедім.</li>
+
+                <li>GitHub Pages арқылы сайтты жарияладым. Сайтты Интернетте көруге болатын сілтемені алдым.</li>
+
+            </ol>
+
+        </section>
+
+        <section>
+
+            <h3>GitHub арқылы сайтты қалай жарияладым?</h3>
+
+            <p>GitHub Pages арқылы сайтты жариялау үшін келесі әрекеттерді жасадым:</p>
+
+            <ul>
+
+                <li>GitHub-та жаңа репозиторий құрдым. Репозиторийдің атын portfolio-site деп атадым.</li>
+
+                <li>Компьютерде жазылған HTML, CSS және JavaScript файлдарын репозиторийге жүктедім:</li>
+
+                <ul>
+
+                    <li>git init — Жаңа Git репозиторийін бастадым.</li>
+
+                    <li>git add . — Барлық файлдарды индексқа қостым.</li>
+
+                    <li>git commit -m "Initial commit" — Файлдарды сақтау үшін commit жасадым.</li>
+
+                    <li>git branch -M main — Негізгі тармақты (main) орнаттым.</li>
+
+                    <li>git remote add origin <репозиторий сілтемесі> — GitHub репозиторийін қостым.</li>
+
+                    <li>git push -u origin main — Файлдарды GitHub-қа жүктедім.</li>
+
+                </ul>
+
+                <li>GitHub репозиторийінің баптауларынан (Settings) Pages бөлімін таңдадым.</li>
+
+                <li>Deploy from branch опциясын таңдап, негізгі тармақты (main) белгіледім.</li>
+
+                <li>GitHub автоматты түрде сайтты жариялап, маған сілтеме берді.</li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>©️ 2024 Менің Сайтым. Барлық құқықтар қорғалған.</p>
+
+    </footer>
+
+</body>
+
+</html>
